@@ -5,10 +5,18 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi"
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <section className="h-full">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+      }}
+      className="h-full"
+    >
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
@@ -48,8 +56,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Stats/>
-    </section>
+      <Stats />
+    </motion.section >
   );
 }
 
