@@ -25,7 +25,7 @@ const Photo = () => {
                         quality={100}
                         fill
                         alt=''
-                        className='object-contain'
+                        className='object-contain opacity-80'
                     />
                 </motion.div>
 
