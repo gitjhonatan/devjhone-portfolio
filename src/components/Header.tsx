@@ -13,23 +13,19 @@ const Header = () => {
                     <h1 className="text-4xl font-semibold">
                         {'<JL/>'}<span className="text-accent">.</span>
                     </h1>
-
                 </Link>
 
-                {/* desktop nav */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href='/contact'>
-                    <Button>Hire me</Button>
+                        <Button>Hire me</Button>
                     </Link>
                 </div>
-                
-                {/* mobile nav */}
 
                 <div className="xl:hidden">
-                    <MobileNav/>
+                    <MobileNav />
                 </div>
-                
+
             </div>
         </header>
     )
