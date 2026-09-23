@@ -1,25 +1,23 @@
 import CountuP from 'react-countup';
 
-// @ts-ignore
 const stats = [
     {
+        num: 7,
+        text: "Years of experience",
+    },
+    {
+        num: 30,
+        text: "Projects delivered",
+    },
+    {
         num: 12,
-        text: 'Years of experience',
+        text: "Systems architected",
     },
     {
-        num: 26,
-        text: 'Projects completed',
+        num: 8,
+        text: "Infrastructure projects",
     },
-    {
-        num: 500,
-        text: 'Technologies mastered',
-    },
-    {
-        num: 500,
-        text: 'Code commits',
-    },
-
-]
+];
 
 const Stats = () => {
     return (
@@ -31,12 +29,20 @@ const Stats = () => {
                             <div
                                 className='flex flex-1 gap-4 items-center justify-center xl:justify-start'
                                 key={index}>
-                                <CountuP
-                                    end={item.num}
-                                    duration={5}
-                                    delay={2}
-                                    className='text-4xl xl:text-6xl font-extrabold'
-                                />
+                                <div
+                                    className='flex gap-2 font-extrabold'
+                                >
+                                    <CountuP
+                                        end={item.num}
+                                        duration={5}
+                                        delay={2}
+                                        className='text-4xl xl:text-6xl font-extrabold'
+                                    />
+                                    <p className="text-3xl self-center">
+                                        +
+                                    </p>
+                                </div>
+
                                 <p
                                     className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-150px"
                                         } leading-snug text-white/80`}

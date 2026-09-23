@@ -13,7 +13,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+        transition: { delay: 2, duration: 0.4, ease: "easeIn" }
       }}
       className="h-full"
     >
@@ -26,7 +26,7 @@ export default function Home() {
               {'Hello I\'m'} <br /> <span className="text-accent">Jhonatan Lima</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital eperiences and I am proficient in various programing languages and technologies
+              I excel at creating elegant, robust and scalable solutions. My experience spans cloud architectures, web and mobile development, databases, Artificial Intelligence, etc. I am always looking for opportunities for professional growth, committed to delivering high-quality solutions that drive project success.
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
