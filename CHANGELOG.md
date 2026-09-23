@@ -9,8 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added site metadata including title, description, Open Graph, and Twitter configuration.
+- Added site metadata including title, description, and Open Graph configuration.
 - Added favicon configuration.
+- Added resume download functionality.
+- Added the resume PDF to the public assets.
 
 ### Changed
 
