@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added favicon configuration.
 - Added resume download functionality.
 - Added the resume PDF to the public directory.
+- Added contact form funcionality.
+- Added contact form client-side and server-side validation using Zod.
+- Added contact form submission through the `/api/contact` endpoint.
+- Added email delivery using Nodemailer and Gmail SMTP.
+- Added a custom HTML email template using the portfolio's primary and accent colors.
+- Added email `replyTo` support to allow direct replies to the contact sender.
+- Added environment variables for Gmail SMTP credentials.
 
 ### Changed
 
