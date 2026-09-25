@@ -23,3 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Made service cards fully clickable and linked them to the contact page.
 - Generated service numbers dynamically from the list index.
 - Standardized service card dimensions and spacing across responsive layouts.
+- Refactored the Resume page into reusable components.
+- Separated Resume data by section.
+- Decoupled skill data from icon components.
+- Improved TypeScript typing across Resume components.
