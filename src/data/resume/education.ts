@@ -20,7 +20,7 @@ export const education: Education = {
         {
             institution: "Universidade Anhembi Morumbi",
             position: "Systems Analysis and Development",
-            duration: "In Progress",
+            duration: "",
         },
     ],
 };
