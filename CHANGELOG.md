@@ -34,3 +34,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Separated Resume data by section.
 - Decoupled skill data from icon components.
 - Improved TypeScript typing across Resume components.
+- Simplified Tailwind CSS content paths to use the `src` directory.
+- Removed unused Tailwind configuration for dark mode, cards, accordions, and redundant defaults.
+- Removed unused shadcn/ui CSS variables while keeping the variables required by the Tooltip component.
+- Simplified global CSS by removing unused shadcn/ui theme variables and commented styles.
+- Updated the project color configuration to use the portfolio's existing visual theme.
+- Removed unused TypeScript JavaScript support configuration.
+- Simplified project configuration while preserving Next.js, TypeScript, Radix UI, and shadcn/ui requirements.
