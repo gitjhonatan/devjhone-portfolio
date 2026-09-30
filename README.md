@@ -78,8 +78,8 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/gitjhonatan/react-portifolio.git
-cd react-portifolio
+git clone https://github.com/gitjhonatan/devjhone-portfolio.git
+cd devjhone-portfolio
 ```
 
 Install dependencies:
