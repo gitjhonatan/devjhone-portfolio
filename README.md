@@ -1,36 +1,162 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jhonatan Lima — Software Engineer Portfolio
 
-## Getting Started
+Personal portfolio website built with Next.js and TypeScript to showcase my professional experience, skills, and services.
 
-First, run the development server:
+## ✨ Features
+
+- 🌎 Portuguese and English localization
+- 📱 Responsive design
+- 🎨 Modern dark interface
+- ⚡ Smooth animations and page transitions
+- 📄 Professional resume and experience
+- 🛠️ Services and technical skills
+- 📂 Project showcase
+- 📬 Contact form with email delivery
+- 🔒 Client-side and server-side form validation
+- 🌐 Browser language detection with manual language switching
+
+## 🛠️ Tech Stack
+
+### Core
+
+- [Next.js](https://nextjs.org/) — React framework
+- [React](https://react.dev/) — UI library
+- [TypeScript](https://www.typescriptlang.org/) — Type-safe development
+
+### Styling & UI
+
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS framework
+- [Framer Motion](https://motion.dev/) — Animations and transitions
+- [Radix UI](https://www.radix-ui.com/) — Accessible UI primitives
+- [React Icons](https://react-icons.github.io/react-icons/) — Icon library
+- [Swiper](https://swiperjs.com/) — Interactive sliders
+
+### Forms & Validation
+
+- [Zod](https://zod.dev/) — Schema validation
+- [React Phone Number Input](https://github.com/catamphetamine/react-phone-number-input) — International phone input
+- [Nodemailer](https://nodemailer.com/) — Email delivery
+
+### Internationalization
+
+- [next-intl](https://next-intl.dev/) — Internationalization and locale management
+
+## 📁 Project Structure
+
+```text
+src/
+├── app/
+│   ├── api/
+│   │   └── contact/
+│   ├── contact/
+│   ├── resume/
+│   ├── services/
+│   └── work/
+├── components/
+│   ├── resume/
+│   ├── Social/
+│   └── ui/
+├── data/
+│   └── resume/
+├── i18n/
+├── lib/
+│   ├── mail/
+│   │   └── templates/
+│   └── validations/
+└── types/
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/gitjhonatan/react-portifolio.git
+cd react-portifolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+MAIL_USER=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+```
+
+These variables are used by the contact form to send emails through SMTP.
+
+### Development
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Production
 
-## Learn More
+Build the application:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## 📜 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Command         | Description                          |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Start the development server         |
+| `npm run build` | Build the application for production |
+| `npm start`     | Start the production server          |
+| `npm run lint`  | Run ESLint                           |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🌐 Localization
+
+The portfolio currently supports:
+
+- 🇧🇷 Portuguese (`pt-BR`)
+- 🇺🇸 English (`en`)
+
+The initial locale is resolved from the browser's language preferences, with Portuguese as the default fallback.
+
+Users can also manually switch between supported languages through the language selector.
+
+## 📬 Contact Form
+
+The contact form includes:
+
+- Client-side validation with Zod
+- Server-side validation
+- International phone number input
+- SMTP email delivery with Nodemailer
+- Success and error feedback
+
+SMTP credentials must be configured through environment variables.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
