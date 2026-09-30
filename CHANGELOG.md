@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added a custom HTML email template using the portfolio's primary and accent colors.
 - Added email `replyTo` support to allow direct replies to the contact sender.
 - Added environment variables for Gmail SMTP credentials.
+- Add translation support for Portuguese and English.
+- Add language switcher and browser language detection.
 
 ### Changed
 

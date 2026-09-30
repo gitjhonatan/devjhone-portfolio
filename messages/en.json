@@ -1,0 +1,179 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "resume": "Resume",
+        "contact": "Contact",
+        "hire": "Hire me"
+    },
+    "Stats": {
+        "yearsOfExperience": "Years of experience",
+        "projectsDelivered": "Projects delivered",
+        "systemsArchitected": "Systems architected",
+        "InfraestructureProjects": "Infrastructure projects"
+    },
+    "HomePage": {
+        "role": "Software Engineer",
+        "greeting": "Hello I'm",
+        "name": "Jhonatan Lima",
+        "description": "I excel at creating elegant, robust and scalable solutions. My experience spans cloud architectures, web and mobile development, databases, Artificial Intelligence, etc. I am always looking for opportunities for professional growth, committed to delivering high-quality solutions that drive project success.",
+        "btnDownloadResume": "Download CV"
+    },
+    "ServicesPage": {
+        "fullStackDevelopmentTitle": "Full Stack Development",
+        "fullStackDevelopmentDescription": "End-to-end development of web applications, from user interfaces to business logic, integrations and data management.",
+        "apiBackendDevelopmentTitle": "API & Backend Development",
+        "apiBackendDevelopmentDescription": "Development of robust APIs and backend systems focused on performance, security, scalability and maintainability.",
+        "cloudInfraestructureTitle": "Cloud & Infrastructure",
+        "cloudInfraestructureDescription": "Design and automation of reliable infrastructure with a focus on scalability, availability, deployment efficiency and monitoring.",
+        "systemArchitectureTitle": "System Architecture",
+        "systemArchitectureDescription": "Planning and design of scalable software architectures, from technical decisions and integrations to long-term maintainability."
+    },
+    "ContactPage": {
+        "title": "Let's work together",
+        "description": "Have a project, challenge, or opportunity in mind? Let's talk and see how we can build something great together. Or simply want to connect? Feel free to reach out.",
+        "info": {
+            "phone": {
+                "title": "Phone",
+                "description": "(+55) 11 98478-6817"
+            },
+            "email": {
+                "title": "Email",
+                "description": "jhonatan.lima105@gmail.com"
+            },
+            "location": {
+                "title": "Location",
+                "description": "São Paulo, SP. Brazil"
+            }
+        },
+        "form": {
+            "firstName": {
+                "placeholder": "First Name"
+            },
+            "lastName": {
+                "placeholder": "Last Name"
+            },
+            "email": {
+                "placeholder": "Email Address"
+            },
+            "phone": {
+                "placeholder": "Phone Number"
+            },
+            "subject": {
+                "placeholder": "Select a subject",
+                "options": {
+                    "jobOpportunity": "Job Opportunity",
+                    "freelanceProject": "Freelance Project",
+                    "generalInquiry": "General Inquiry",
+                    "other": "Other"
+                }
+            },
+            "message": {
+                "placeholder": "Type your message here"
+            },
+            "submit": "Send Message",
+            "sending": "Sending..."
+        },
+        "status": {
+            "success": "Your message has been sent successfully.",
+            "error": "Something went wrong. Please try again."
+        }
+    },
+    "ResumePage": {
+        "tabs": {
+            "experience": "Experience",
+            "education": "Education",
+            "skills": "Skills",
+            "about": "About Me"
+        },
+        "experience": {
+            "title": "Professional Experience",
+            "description": "A journey shaped by experience, leadership, and continuous growth.",
+            "items": [
+                {
+                    "company": "BlueMaxx",
+                    "position": "Full Stack Engineer",
+                    "duration": "Feb 2025 - Present"
+                },
+                {
+                    "company": "Match<IT>",
+                    "position": "Full Stack Engineer / Tech Lead",
+                    "duration": "Sep 2022 - Nov 2024"
+                },
+                {
+                    "company": "Fix",
+                    "position": "Full Stack Engineer",
+                    "duration": "Jun 2021 - Aug 2022"
+                },
+                {
+                    "company": "Corte Certo",
+                    "position": "Full Stack Engineer",
+                    "duration": "Nov 2020 - Jul 2021"
+                },
+                {
+                    "company": "Braavo!",
+                    "position": "Backend Engineer",
+                    "duration": "Jul 2020 - Mar 2021"
+                },
+                {
+                    "company": "Promotora Presença",
+                    "position": "Full Stack Engineer",
+                    "duration": "Apr 2019 - Apr 2020"
+                },
+                {
+                    "company": "Logus Informática",
+                    "position": "Web Designer",
+                    "duration": "Feb 2015 - Sep 2015"
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "description": "Academic background in technology, complemented by practical experience in software engineering and system development.",
+            "items": [
+                {
+                    "institution": "Universidade Anhembi Morumbi",
+                    "degree": "Systems Analysis and Development"
+                }
+            ]
+        },
+        "skills": {
+            "title": "My Skills",
+            "description": "A versatile technology stack built through years of experience developing web applications, APIs, scalable systems, and infrastructure."
+        },
+        "about": {
+            "title": "About Me",
+            "description": "Software engineer with a passion for solving complex problems, building reliable solutions, and continuously learning. I value clean code, thoughtful architecture, and practical solutions that create real impact.",
+            "items": [
+                {
+                    "fieldName": "Name",
+                    "fieldValue": "Jhonatan Lima"
+                },
+                {
+                    "fieldName": "Phone",
+                    "fieldValue": "(+55) 11 98478-6817"
+                },
+                {
+                    "fieldName": "Experience",
+                    "fieldValue": "7+ years"
+                },
+                {
+                    "fieldName": "Email",
+                    "fieldValue": "jhonatan.lima@gmail.com"
+                },
+                {
+                    "fieldName": "Nationality",
+                    "fieldValue": "Brazilian"
+                },
+                {
+                    "fieldName": "Freelance",
+                    "fieldValue": "Available"
+                },
+                {
+                    "fieldName": "Languages",
+                    "fieldValue": "Portuguese, English"
+                }
+            ]
+        }
+    }
+}

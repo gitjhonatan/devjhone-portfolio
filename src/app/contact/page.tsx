@@ -20,6 +20,7 @@ import {
   contactSchema,
   type ContactEmailData,
 } from "@/lib/validations/contact";
+import { useTranslations } from "next-intl";
 
 const initialFormData: ContactEmailData = {
   firstName: "",
@@ -33,18 +34,15 @@ const initialFormData: ContactEmailData = {
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+55) 11 98478-6817",
+    key: "phone",
   },
   {
     icon: <FaEnvelope />,
-    title: "Email",
-    description: "jhonatan.lima105@gmail.com",
+    key: "email",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Location",
-    description: "São Paulo, SP. Brazil",
+    key: "location",
   },
 ];
 
@@ -55,6 +53,7 @@ const Contact = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const t = useTranslations("ContactPage");
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -170,13 +169,9 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="flex flex-col gap-6 rounded-xl bg-[#27272c] p-10"
             >
-              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
+              <h3 className="text-4xl text-accent">{t("title")}</h3>
 
-              <p className="text-white/60">
-                Have a project, challenge, or opportunity in mind? Let&apos;s
-                talk and see how we can build something great together. Or
-                simply want to connect? Feel free to reach out.
-              </p>
+              <p className="text-white/60">{t("description")}</p>
 
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
@@ -184,7 +179,7 @@ const Contact = () => {
                     className="w-full"
                     type="text"
                     name="firstName"
-                    placeholder="First Name"
+                    placeholder={t("form.firstName.placeholder")}
                     value={formData.firstName}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -203,7 +198,7 @@ const Contact = () => {
                     className="w-full"
                     type="text"
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder={t("form.lastName.placeholder")}
                     value={formData.lastName}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -222,7 +217,7 @@ const Contact = () => {
                     className="w-full"
                     type="email"
                     name="email"
-                    placeholder="Email Address"
+                    placeholder={t("form.email.placeholder")}
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -238,6 +233,7 @@ const Contact = () => {
                   <PhoneInput
                     value={formData.phone}
                     onChange={handlePhoneChange}
+                    placeholder={t("form.phone.placeholder")}
                   />
 
                   {errors.phone && (
@@ -253,23 +249,25 @@ const Contact = () => {
                   disabled={isSubmitting}
                 >
                   <SelectTrigger>
-                    <SelectValue placeholder="Select a subject" />
+                    <SelectValue placeholder={t("form.subject.placeholder")} />
                   </SelectTrigger>
 
                   <SelectContent>
                     <SelectItem value="job-opportunity">
-                      Job Opportunity
+                      {t("form.subject.options.jobOpportunity")}
                     </SelectItem>
 
                     <SelectItem value="freelance-project">
-                      Freelance Project
+                      {t("form.subject.options.freelanceProject")}
                     </SelectItem>
 
                     <SelectItem value="general-inquiry">
-                      General Inquiry
+                      {t("form.subject.options.generalInquiry")}
                     </SelectItem>
 
-                    <SelectItem value="other">Other</SelectItem>
+                    <SelectItem value="other">
+                      {t("form.subject.options.other")}
+                    </SelectItem>
                   </SelectContent>
                 </Select>
 
@@ -283,7 +281,7 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   className="h-[200px]"
-                  placeholder="Type your message here"
+                  placeholder={t("form.message.placeholder")}
                   onChange={handleChange}
                   disabled={isSubmitting}
                   required
@@ -296,39 +294,40 @@ const Contact = () => {
 
               <Button
                 size="lg"
-                className="max-w-40 bg-accent text-primary"
+                className="max-w-44 bg-accent text-primary"
                 disabled={isSubmitting}
                 type="submit"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? t("form.sending") : t("form.submit")}
               </Button>
 
               {status === "success" && (
-                <p className="text-green-400">
-                  Your message has been sent successfully.
-                </p>
+                <p className="text-green-400">{t("status.success")}</p>
               )}
 
               {status === "error" && (
-                <p className="text-red-400">
-                  Something went wrong. Please try again.
-                </p>
+                <p className="text-red-400">{t("status.error")}</p>
               )}
             </form>
           </div>
 
           <div className="order-1 mb-8 flex flex-1 items-center xl:order-none xl:justify-end xl:mb-0 self-start">
-            <ul className="flex flex-col gap-10">
+              <ul className="flex flex-col gap-10 w-[calc(100vw-64px)] sm:w-max">
+
               {info.map((item) => (
-                <li key={item.title} className="flex items-center gap-6">
+                <li key={item.key} className="flex items-center gap-6">
                   <div className="flex h-[52px] w-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:h-[72px] xl:w-[72px]">
                     <div className="text-[20px]">{item.icon}</div>
                   </div>
 
                   <div className="flex-1">
-                    <p className="text-white/60">{item.title}</p>
+                    <p className="text-white/60">
+                      {t(`info.${item.key}.title`)}
+                    </p>
 
-                    <h3 className="text-xl">{item.description}</h3>
+                    <h3 className="text-xl break-all">
+                      {t(`info.${item.key}.description`)}
+                    </h3>
                   </div>
                 </li>
               ))}

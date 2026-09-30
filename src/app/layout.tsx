@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: '--font-jetbrainsMono'
+  variable: "--font-jetbrainsMono",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +48,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,11 +56,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jetbrainsMono.variable}>
-        <Header />
-        <StairTransition />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <NextIntlClientProvider>
+          <Header />
+          <StairTransition />
+          <PageTransition>{children}</PageTransition>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
