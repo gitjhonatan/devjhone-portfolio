@@ -2,28 +2,31 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "resume",
-    path: "/resume",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const t = useTranslations("Navigation");
+
+  const links = [
+    {
+      name: t("home"),
+      path: "/",
+    },
+    {
+      name: t("services"),
+      path: "/services",
+    },
+    {
+      name: t("resume"),
+      path: "/resume",
+    },
+    {
+      name: t("contact"),
+      path: "/contact",
+    },
+  ];
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
@@ -53,6 +56,9 @@ const MobileNav = () => {
             );
           })}
         </nav>
+        <div className="mt-auto flex justify-center pb-8">
+          <LanguageSwitcher />
+        </div>
       </SheetContent>
     </Sheet>
   );

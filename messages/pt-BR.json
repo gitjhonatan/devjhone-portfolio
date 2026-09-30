@@ -1,0 +1,179 @@
+{
+  "Navigation": {
+    "home": "Início",
+    "services": "Serviços",
+    "resume": "Currículo",
+    "contact": "Contato",
+    "hire": "Contratar"
+  },
+  "Stats": {
+    "yearsOfExperience": "Anos de Experiência",
+    "projectsDelivered": "Projetos Concluídos",
+    "systemsArchitected": "Sistemas Arquitetados",
+    "InfraestructureProjects": "Projetos de Infraestrutura"
+  },
+  "HomePage": {
+    "role": "Engenheiro de Software",
+    "greeting": "Olá, eu sou",
+    "name": "Jhonatan Lima",
+    "description": "Destaco-me na criação de soluções elegantes, robustas e escaláveis. Minha experiência abrange arquiteturas em nuvem, desenvolvimento web e mobile, bancos de dados, Inteligência Artificial, entre outras áreas. Busco constantemente oportunidades de crescimento profissional e estou comprometido em entregar soluções de alta qualidade que impulsionem o sucesso dos projetos.",
+    "btnDownloadResume": "Baixar CV"
+  },
+  "ServicesPage": {
+    "fullStackDevelopmentTitle": "Desenvolvimento Full Stack",
+    "fullStackDevelopmentDescription": "Desenvolvimento completo de aplicações web, desde as interfaces de usuário até as regras de negócio, integrações e gerenciamento de dados.",
+    "apiBackendDevelopmentTitle": "Desenvolvimento de APIs e Backend",
+    "apiBackendDevelopmentDescription": "Desenvolvimento de APIs robustas e sistemas backend com foco em desempenho, segurança, escalabilidade e manutenibilidade.",
+    "cloudInfraestructureTitle": "Cloud e Infraestrutura",
+    "cloudInfraestructureDescription": "Projetar e automatizar infraestruturas confiáveis, com foco em escalabilidade, disponibilidade, eficiência de implantação e monitoramento.",
+    "systemArchitectureTitle": "Arquitetura de Sistemas",
+    "systemArchitectureDescription": "Planejamento e desenvolvimento de arquiteturas de software escaláveis, desde decisões técnicas e integrações até a manutenibilidade a longo prazo."
+  },
+  "ContactPage": {
+    "title": "Vamos trabalhar juntos",
+    "description": "Tem um projeto, desafio ou oportunidade em mente? Vamos conversar e descobrir como podemos construir algo incrível juntos. Ou simplesmente quer trocar uma ideia? Fique à vontade para entrar em contato.",
+    "info": {
+      "phone": {
+        "title": "Telefone",
+        "description": "(+55) 11 98478-6817"
+      },
+      "email": {
+        "title": "E-mail",
+        "description": "jhonatan.lima105@gmail.com"
+      },
+      "location": {
+        "title": "Localização",
+        "description": "São Paulo, SP. Brasil"
+      }
+    },
+    "form": {
+      "firstName": {
+        "placeholder": "Nome"
+      },
+      "lastName": {
+        "placeholder": "Sobrenome"
+      },
+      "email": {
+        "placeholder": "Endereço de e-mail"
+      },
+      "phone": {
+        "placeholder": "Telefone"
+      },
+      "subject": {
+        "placeholder": "Selecione um assunto",
+        "options": {
+          "jobOpportunity": "Oportunidade de trabalho",
+          "freelanceProject": "Projeto freelance",
+          "generalInquiry": "Dúvida ou contato geral",
+          "other": "Outro"
+        }
+      },
+      "message": {
+        "placeholder": "Digite sua mensagem aqui"
+      },
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando..."
+    },
+    "status": {
+      "success": "Sua mensagem foi enviada com sucesso.",
+      "error": "Algo deu errado. Tente novamente."
+    }
+  },
+  "ResumePage": {
+    "tabs": {
+      "experience": "Experiência",
+      "education": "Formação",
+      "skills": "Habilidades",
+      "about": "Sobre Mim"
+    },
+    "experience": {
+      "title": "Experiência Profissional",
+      "description": "Uma trajetória construída com experiência, liderança e crescimento contínuo.",
+      "items": [
+        {
+          "company": "BlueMaxx",
+          "position": "Dev Full Stack ",
+          "duration": "Fev 2025 - Atualmente"
+        },
+        {
+          "company": "Match<IT>",
+          "position": "Dev Full Stack  / Tech Lead",
+          "duration": "Set 2022 - Nov 2024"
+        },
+        {
+          "company": "Fix",
+          "position": "Dev Full Stack ",
+          "duration": "Jun 2021 - Ago 2022"
+        },
+        {
+          "company": "Corte Certo",
+          "position": "Dev Full Stack ",
+          "duration": "Nov 2020 - Jul 2021"
+        },
+        {
+          "company": "Braavo!",
+          "position": "Dev Backend",
+          "duration": "Jul 2020 - Mar 2021"
+        },
+        {
+          "company": "Promotora Presença",
+          "position": "Dev Full Stack ",
+          "duration": "Abr 2019 - Abr 2020"
+        },
+        {
+          "company": "Logus Informática",
+          "position": "Web Designer",
+          "duration": "Fev 2015 - Set 2015"
+        }
+      ]
+    },
+    "education": {
+      "title": "Formação",
+      "description": "Formação acadêmica em tecnologia, complementada por experiência prática em engenharia de software e desenvolvimento de sistemas.",
+      "items": [
+        {
+          "institution": "Universidade Anhembi Morumbi",
+          "degree": "Análise e Desenvolvimento de Sistemas"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Minhas Habilidades",
+      "description": "Um conjunto versátil de tecnologias construído ao longo de anos de experiência no desenvolvimento de aplicações web, APIs, sistemas escaláveis e infraestrutura."
+    },
+    "about": {
+      "title": "Sobre Mim",
+      "description": "Engenheiro de software apaixonado por resolver problemas complexos, construir soluções confiáveis e aprender continuamente. Valorizo código limpo, arquitetura bem estruturada e soluções práticas que geram impacto real.",
+      "items": [
+        {
+          "fieldName": "nome",
+          "fieldValue": "Jhonatan Lima"
+        },
+        {
+          "fieldName": "telefone",
+          "fieldValue": "(+55) 11 98478-6817"
+        },
+        {
+          "fieldName": "experiência",
+          "fieldValue": "7+ anos"
+        },
+        {
+          "fieldName": "e-mail",
+          "fieldValue": "jhonatan.lima@gmail.com"
+        },
+        {
+          "fieldName": "nacionalidade",
+          "fieldValue": "Brasileiro"
+        },
+        {
+          "fieldName": "freelance",
+          "fieldValue": "Disponível"
+        },
+        {
+          "fieldName": "idiomas",
+          "fieldValue": "Português, Inglês"
+        }
+      ]
+    }
+  }
+}
