@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.1] - 2026-09-30
+
+### Fixed
+
+- Remove unused work page and slider button component that caused type-checking errors during production builds.
+- Update repository references in the README after the repository rename.
+
+## [1.0.0] - 2026-09-30
 
 ### Added
 
@@ -13,15 +20,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added favicon configuration.
 - Added resume download functionality.
 - Added the resume PDF to the public directory.
-- Added contact form funcionality.
+- Added contact form functionality.
 - Added contact form client-side and server-side validation using Zod.
 - Added contact form submission through the `/api/contact` endpoint.
 - Added email delivery using Nodemailer and Gmail SMTP.
 - Added a custom HTML email template using the portfolio's primary and accent colors.
 - Added email `replyTo` support to allow direct replies to the contact sender.
 - Added environment variables for Gmail SMTP credentials.
-- Add translation support for Portuguese and English.
-- Add language switcher and browser language detection.
+- Added translation support for Portuguese and English.
+- Added language switcher and browser language detection.
 
 ### Changed
 
@@ -41,5 +48,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unused shadcn/ui CSS variables while keeping the variables required by the Tooltip component.
 - Simplified global CSS by removing unused shadcn/ui theme variables and commented styles.
 - Updated the project color configuration to use the portfolio's existing visual theme.
-- Removed unused TypeScript JavaScript support configuration.
+- Removed unused TypeScript/JavaScript support configuration.
 - Simplified project configuration while preserving Next.js, TypeScript, Radix UI, and shadcn/ui requirements.
